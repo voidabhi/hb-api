@@ -13,8 +13,16 @@ function _res(callback) {
                 callback(err);
             }
             return callback(null, data);
-        }
-        return callback(JSON.parse(body));
+        }else if(response.statusCode== 404){
+			return callback(null,[]);
+		}else {
+            try {
+                error = JSON.parse(body);
+            } catch (err) {
+                callback(err);
+            }		
+		}
+        return callback(error);
     }
 }
 

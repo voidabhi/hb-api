@@ -1,8 +1,8 @@
 
 {
 	"name": "hb-api",
-	"version": "0.0.2",
-	"description": "Node wrapper for the Hummingbird API",
+	"version": "0.0.3",
+	"description": "Wrapper for the Hummingbird API",
 	"keywords": ["hummingbird", "api", "wrapper", "client"],
 	"author": {
 		"name" : "Abhijeet Mohan",
