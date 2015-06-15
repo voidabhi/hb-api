@@ -25,6 +25,7 @@ hb.animeById('ANIME_ID',function(err,anime){
 	console.log(anime);
 });
 ```
+
 ## Get Anime By Anime List ID
 
 ```
@@ -36,5 +37,9 @@ hb.animeByMalId('MY_ANIME_LIST_ID',function(err,anime){
 	console.log(anime);
 });
 ```
+
+## Contribution
+
+Feel free to send a pull request!
 
 
