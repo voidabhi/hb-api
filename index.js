@@ -1,6 +1,7 @@
 var request = require('request'),
-    ANIME_ID_URL = 'https://hummingbird.me/api/v2/anime/{id}',
-    ANIME_MALID_URL = 'https://hummingbird.me/api/v2/anime/myanimelist:{malid}';
+	BASE_URL = 'https://hummingbird.me/api/v2',
+    ANIME_ID_URL = BASE_URL+'/anime/{id}',
+    ANIME_MALID_URL = BASE_URL+'/anime/myanimelist:{malid}';
 
 function _res(callback) {
     return function(error, response, body) {
@@ -12,7 +13,12 @@ function _res(callback) {
             } catch (err) {
                 callback(err);
             }
-            return callback(null, data);
+			if(callback.length==3&&data.anime&&data.linked.episodes)
+				return callback(null, data.anime,data.linked.episodes);
+			else if(callback.length==4&&data.anime&&data.linked.episodes&&data.linked.gallery_images)
+				return callback(null, data.anime,data.linked.episodes,data.linked.gallery_images);
+			else	
+				return callback(null,data);
         }else if(response.statusCode== 404){
 			return callback(null,[]);
 		}else {
