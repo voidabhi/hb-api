@@ -1,7 +1,7 @@
 
 {
 	"name": "hb-api",
-	"version": "0.0.3",
+	"version": "0.0.5",
 	"description": "Wrapper for the Hummingbird API",
 	"keywords": ["hummingbird", "api", "wrapper", "client"],
 	"author": {
@@ -15,5 +15,9 @@
 	},
 	"engines": {
 		"node": "*"
-	}	
+	},
+  "devDependencies": {
+    "chai": "^1.9.2",
+    "mocha": "^1.21.4"
+  }	
 }
