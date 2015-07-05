@@ -17,6 +17,8 @@ var hb = new HB('YOUR_HUMMINGBIRD_APPLICATION_KEY');
 ## Get Anime By ID
 
 ```
+// Fetching animes by id
+
 hb.animeById('ANIME_ID',function(err,anime){
 	if(err){
 		console.error(err);
