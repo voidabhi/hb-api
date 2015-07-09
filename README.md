@@ -31,6 +31,8 @@ hb.animeById('ANIME_ID',function(err,anime){
 ## Get Anime By Anime List ID
 
 ```
+// Fetching animes by list id
+
 hb.animeByMalId('MY_ANIME_LIST_ID',function(err,anime){
 	if(err){
 		console.error(err);
