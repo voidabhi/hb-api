@@ -13,9 +13,9 @@ function _res(callback) {
             } catch (err) {
                 callback(err);
             }
-			if(callback.length==3&&data.anime&&data.linked.episodes)
+			if(callback.length==3 && data.anime && data.linked.episodes)
 				return callback(null, data.anime,data.linked.episodes);
-			else if(callback.length==4&&data.anime&&data.linked.episodes&&data.linked.gallery_images)
+			else if(callback.length==4 && data.anime && data.linked.episodes && data.linked.gallery_images)
 				return callback(null, data.anime,data.linked.episodes,data.linked.gallery_images);
 			else	
 				return callback(null,data);
