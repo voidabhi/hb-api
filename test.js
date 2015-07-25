@@ -1,7 +1,6 @@
 var should = require('chai').should();
 	
 describe('Get Anime By Id', function () {
-	this.timeout(15000);
 
   beforeEach(function (done) {
 	var hb = new require('./index')('YOUR_API_KEY');
