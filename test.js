@@ -1,7 +1,8 @@
 var should = require('chai').should();
 	
 describe('Get Anime By Id', function () {
-
+  
+  // Replace YOUR_API_KEY with your anime key
   beforeEach(function (done) {
 	var hb = new require('./index')('YOUR_API_KEY');
 	hb.animeById('hunter-x-hunter-2011',function(err,data){
