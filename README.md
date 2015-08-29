@@ -1,5 +1,5 @@
 # HB-API
-Wrapper for the [Hummingbird API](http://hummingbird.me/)
+Wrapper for the [Hummingbird] API(http://hummingbird.me/)
 
 ## Installation
 
