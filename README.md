@@ -9,7 +9,8 @@ Wrapper for the [Hummingbird](http://hummingbird.me/) API
 
 Get your HummingBird application key from [here](https://hummingbird.me/apps/mine)
 
-```
+```javascript
+// Requiring the module
 var HB = require("hb-api");
 var hb = new HB('YOUR_HUMMINGBIRD_APPLICATION_KEY');
 ```
