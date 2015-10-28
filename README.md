@@ -19,7 +19,6 @@ var hb = new HB('YOUR_HUMMINGBIRD_APPLICATION_KEY');
 
 ```javascript
 // Fetching animes by id
-
 hb.animeById('ANIME_ID',function(err,anime){
 	if(err){
 		console.error(err);
@@ -33,7 +32,6 @@ hb.animeById('ANIME_ID',function(err,anime){
 
 ```javascript
 // Fetching animes by list id
-
 hb.animeByMalId('MY_ANIME_LIST_ID',function(err,anime){
 	if(err){
 		console.error(err);
