@@ -5,6 +5,8 @@ Wrapper for the [Hummingbird](http://hummingbird.me/) API
 
 `npm install hb-api`
 
+## Dependencies
+
 ## Getting Started
 
 Get your HummingBird application key from [here](https://hummingbird.me/apps/mine)
