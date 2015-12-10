@@ -6,6 +6,7 @@ Wrapper for the [Hummingbird](http://hummingbird.me/) API
 `npm install hb-api`
 
 ## Dependencies
+`request`
 
 ## Getting Started
 
