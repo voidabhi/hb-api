@@ -1,4 +1,5 @@
 # HB-API
+
 Wrapper for the [Hummingbird](http://hummingbird.me/) API
 
 ### Installation
@@ -6,6 +7,7 @@ Wrapper for the [Hummingbird](http://hummingbird.me/) API
 `npm install hb-api`
 
 ### Dependencies
+
 `request`
 
 ### Getting Started
@@ -13,17 +15,19 @@ Wrapper for the [Hummingbird](http://hummingbird.me/) API
 Get your HummingBird application key from [here](https://hummingbird.me/apps/mine)
 
 ```javascript
+
 // Requiring the module
-var HB = require("hb-api");
-var hb = new HB('YOUR_HUMMINGBIRD_APPLICATION_KEY');
+var HB = require("hb-api"),
+    hb = new HB('YOUR_HUMMINGBIRD_APPLICATION_KEY');
 ```
 
 ### Get Anime By ID
 
 ```javascript
+
 // Fetching animes by id
-hb.animeById('ANIME_ID',function(err,anime){
-	if(err){
+hb.animeById('ANIME_ID', function (err, anime) {
+	if (err) {
 		console.error(err);
 		return;
 	}
@@ -34,9 +38,10 @@ hb.animeById('ANIME_ID',function(err,anime){
 ### Get Anime By Anime List ID
 
 ```javascript
+
 // Fetching animes by list id
-hb.animeByMalId('MY_ANIME_LIST_ID',function(err,anime){
-	if(err){
+hb.animeByMalId('MY_ANIME_LIST_ID', function (err, anime) {
+	if (err) {
 		console.error(err);
 		return;
 	}
@@ -46,7 +51,7 @@ hb.animeByMalId('MY_ANIME_LIST_ID',function(err,anime){
 
 ### Contribution
 
-Feel free to send a pull request!
+Open to issues and Feel free to send a pull request for new features or fixing existing issue!
 
 ### License
 
