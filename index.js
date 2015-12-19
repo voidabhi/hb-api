@@ -1,5 +1,5 @@
 var request = require('request'),
-	BASE_URL = 'https://hummingbird.me/api/v2',
+    BASE_URL = 'https://hummingbird.me/api/v2',
     ANIME_ID_URL = BASE_URL+'/anime/{id}',
     ANIME_MALID_URL = BASE_URL+'/anime/myanimelist:{malid}';
 
