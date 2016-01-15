@@ -5,7 +5,7 @@ var gulp = require('gulp'),
 
 
 gulp.task('default', function () {
-    runsequence('lint');
+    runsequence('lint', 'jscs');
 });
 
 gulp.task('lint', function () {
