@@ -1,6 +1,6 @@
-# HB-API
+## HB-API
 
-Wrapper for the [Hummingbird](http://hummingbird.me/) API
+Unofficial node wrapper for the [Hummingbird](http://hummingbird.me/) API
 
 ### Installation
 
