@@ -2,12 +2,13 @@
 var gulp = require('gulp'),
     jscs = require('gulp-jscs'),
     tape = require('tape'),
+    runsequence = require('run-sequence'),
     spec = require('tap-spec'),
     jshint = require('gulp-jshint');
 
 
 gulp.task('default', function () {
-    runsequence('lint', 'jscs');
+    runsequence('lint', 'eslint', 'jscs');
 });
 
 gulp.task('lint', function () {
