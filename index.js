@@ -38,6 +38,7 @@ function HB(key) {
     this.key = key;
 };
 
+// Get anime by id
 HB.prototype.animeById = function getAnimeById(id, callback) {
     var options = {
         url: ANIME_ID_URL.replace('{id}', id),
@@ -48,6 +49,7 @@ HB.prototype.animeById = function getAnimeById(id, callback) {
     request(options, _res(callback));
 };
 
+// Get anime by malid
 HB.prototype.animeByMalId = function getAnimeByMalId(malid, callback) {
     var options = {
         url: ANIME_ID_URL.replace('{malid}', malid),
