@@ -49,9 +49,9 @@ hb.animeByMalId('MY_ANIME_LIST_ID', function (err, anime) {
 });
 ```
 
-### Contribution
+### Contributing
 
-Open to issues and Feel free to send a pull request for new features or fixing existing issue!
+- Please use the [issue tracker](https://github.com/voidabhi/hb-api/issues) to report any bugs or file feature requests.
 
 ### License
 
