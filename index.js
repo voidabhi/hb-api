@@ -33,8 +33,9 @@ function _res(callback) {
 }
 
 function HB(key) {
-    if (!key)
-        throw new ReferenceError('API key is not defined');
+    if (!key) {
+        throw new ReferenceError('API key is not defined');    	
+    }
     this.key = key;
 };
 
