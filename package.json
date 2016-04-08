@@ -1,23 +1,25 @@
-
 {
-	"name": "hb-api",
-	"version": "0.0.5",
-	"description": "Wrapper for the Hummingbird API",
-	"keywords": ["hummingbird", "api", "wrapper", "client"],
-	"author": {
-		"name" : "Abhijeet Mohan",
-		"email": "void.aby@gmail.com"
-	},
-	"main": "index",
-	"repository": "https://github.com/voidabhi/hb-api",
-	"dependencies": {
-		"request": "^2.57.0"
-	},
-	"engines": {
-		"node": "0.12.5"
-	},
-  "devDependencies": {
-    "chai": "^1.9.2",
-    "mocha": "^1.21.4"
-  }	
+    "name": "hb-api",
+    "version": "0.0.5",
+    "description": "Wrapper for the Hummingbird API",
+    "keywords": ["hummingbird", "api", "wrapper", "client"],
+    "author": {
+        "name": "Abhijeet Mohan",
+        "email": "void.aby@gmail.com"
+    },
+    "main": "index",
+    "repository": "https://github.com/voidabhi/hb-api",
+    "dependencies": {
+        "request": "^2.57.0"
+    },
+    "scripts": {
+      "test": "node test.js"
+    }
+    "engines": {
+        "node": "0.12.5"
+    },
+    "devDependencies": {
+        "chai": "^1.9.2",
+        "mocha": "^1.21.4"
+    }
 }
