@@ -1,10 +1,10 @@
 var request = require('request'),
     BASE_URL = 'https://hummingbird.me/api/v2',
-    ANIME_ID_URL = BASE_URL+'/anime/{id}',
-    ANIME_MALID_URL = BASE_URL+'/anime/myanimelist:{malid}';
+    ANIME_ID_URL = BASE_URL + '/anime/{id}',
+    ANIME_MALID_URL = BASE_URL + '/anime/myanimelist:{malid}';
 
 function _res(callback) {
-    return function(error, response, body) {
+    return function (error, response, body) {
         if (error)
             return callback(error);
         if (response.statusCode == 200) {
@@ -13,28 +13,28 @@ function _res(callback) {
             } catch (err) {
                 callback(err);
             }
-			if(callback.length==3 && data.anime && data.linked.episodes)
-				return callback(null, data.anime,data.linked.episodes);
-			else if(callback.length==4 && data.anime && data.linked.episodes && data.linked.gallery_images)
-				return callback(null, data.anime,data.linked.episodes,data.linked.gallery_images);
-			else	
-				return callback(null,data);
-        }else if(response.statusCode== 404){
-			return callback(null,[]);
-		}else {
+            if (callback.length == 3 && data.anime && data.linked.episodes)
+                return callback(null, data.anime, data.linked.episodes);
+            else if (callback.length == 4 && data.anime && data.linked.episodes && data.linked.gallery_images)
+                return callback(null, data.anime, data.linked.episodes, data.linked.gallery_images);
+            else
+                return callback(null, data);
+        } else if (response.statusCode == 404) {
+            return callback(null, []);
+        } else {
             try {
                 error = JSON.parse(body);
             } catch (err) {
                 callback(err);
-            }		
-		}
+            }
+        }
         return callback(error);
     }
 }
 
 function HB(key) {
     if (!key) {
-        throw new ReferenceError('API key is not defined');    	
+        throw new ReferenceError('API key is not defined');
     }
     this.key = key;
 };
