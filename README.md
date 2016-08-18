@@ -17,7 +17,7 @@ Get your HummingBird application key from [here](https://hummingbird.me/apps/min
 ```javascript
 
 // Requiring the module
-var HB = require("hb-api"),
+var HB = require('hb-api'),
     hb = new HB('YOUR_HUMMINGBIRD_APPLICATION_KEY');
 ```
 
