@@ -8,7 +8,11 @@ var gulp = require('gulp'),
 
 
 gulp.task('default', function () {
-    runsequence('lint', 'eslint', 'jscs');
+    runsequence('lint', 'jscs');
+});
+
+gulp.task('lint', function () {
+    runsequence('jshint', 'eslint');
 });
 
 gulp.task('lint', function () {
