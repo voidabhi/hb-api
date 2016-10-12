@@ -13,7 +13,8 @@
         "request": "^2.57.0"
     },
     "scripts": {
-      "test": "node test.js"
+      "test": "node test.js",
+      "lint": "jshint *.js"
     },
     "engines": {
         "node": "0.12.5"
